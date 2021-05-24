@@ -7,4 +7,4 @@ Las carpetas son:
 
 Cada una de ellas contiene los archivos necesarios para funcionar, así como su README independiente donde se explica sus diferenten funcionalidades.
 
-En este index realice un índice a los proyectos ya ejecutados en el servidor netlify: https://proyecto-indice.netlify.app
+
