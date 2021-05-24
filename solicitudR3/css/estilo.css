@@ -1,0 +1,143 @@
+/* #modal{
+   display: block;
+   animation: show-message 1s 1 normal 0s ease-out both;
+ }
+
+@keyframes show-message {
+   0% {
+     visibility: hidden;
+     opacity: 0;
+   }
+   100% {
+     visibility: visible;
+     opacity: 1;
+   }
+ } */
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+ }
+
+.container{
+   width: 100%;
+   height: 100vh;
+/* background: coral; */
+}
+
+h1{
+   text-align: center;
+   background-color: #00008b;
+   color: #fff;
+   padding: 10px;
+   font-size: 2em;
+}
+
+h2{
+text-align: center;
+margin: 3rem;
+font-size: 1.5em;
+}
+
+.conjunto{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+   justify-content: center;
+/*    background: crimson; */
+}
+
+ .img-content{
+    width: 60%;
+/*     background: pink; */
+max-width: 750px;
+ }
+
+ #img{
+    width: 100%;
+    background-image: url(../image/bokunohero.jpg);
+    background-attachment:inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+ }
+
+ #btnVideo{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: rgb(182, 196, 187);
+    position:absolute;
+    top: 55%;
+    left: 33%;
+    text-align: center;
+    line-height: 3em;
+    font-size: 1.5em;
+   cursor: pointer;
+ }
+
+ span{
+    font-size: 2em;
+ }
+
+h3{
+   margin-bottom: 1.2rem;
+   font-size: 1.5em;
+}
+
+ .description{
+    width: 30%;
+/*     background: chartreuse; */
+    padding: 30px;
+    line-height: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+ }
+
+  /* _____________________________ */
+/*  media queries */
+/* ------------------------------ */
+@media screen and (max-width: 950px) { 
+
+   .img-content{
+      width: 50%;
+      margin-left: 1rem;
+   }
+
+ #btnVideo{
+   width: 2.5em;
+   height: 2.5em;
+   line-height: 2.4em;
+   left: calc(33% - 1rem);
+ }
+
+ span{
+   font-size: 1.5em;
+}
+
+.description{
+   width: 40%;
+}
+
+   }
+
+   @media screen and (max-width: 800px) {
+      .img-content{
+         width: 90%;
+      }
+      #btnVideo{
+         left: 50%;
+      }
+      .description{
+         width: 90%;
+      }
+      h3{
+         margin-bottom: 1.5rem;
+      }
+   } 

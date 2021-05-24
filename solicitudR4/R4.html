@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>R4 Evaluación</title>
+   <link rel="stylesheet" href="./css/estilos.css">
+
+<link  rel="icon"   href="./image/rock.svg" type="image/png" />
+
+<!-- font family -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <div class="container">
+
+      <div class="header">
+         <h1>R4 EVALUACIÓN</h1>
+         <h2>Tabla Responsive (consumiendo Api Rest)</h2>
+      </div>
+      <main>
+  
+         <table class="table">
+            <thead>
+               <tr>
+                  <th>Autor</th>
+                  <th>Título</th>
+                  <th>Fuente</th>
+                  <th>Imagen</th>
+                  <th>Categoria</th>
+                  <th>Lenguaje</th>
+                  <th>País</th>
+                  <th>Publicación</th>
+           
+               </tr>
+            </thead>
+         </table>
+
+      </main>
+      <footer>
+
+      </footer>
+
+      <!-- **********************************template************************************************* -->
+      <template id="tabla">
+
+         <tbody>
+            <tr>
+               <td data-titulo="Autor"></td>
+               <td data-titulo="Título"></td>
+               <td data-titulo="Fuente"></td>
+               <td data-titulo="Imagen"></td>
+               <td data-titulo="Categoria"></td>
+               <td data-titulo="Lenguaje"></td>
+               <td data-titulo="País"></td>
+               <td data-titulo="Publicación"></td>
+            </tr>
+         </tbody>
+        
+      </template>
+
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <div id="template-tabla">
+      </div>
+
+   </div><!-- end container -->
+   <script src="./js/app.js"></script>
+</body>
+</html>
